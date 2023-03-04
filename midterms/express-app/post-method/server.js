@@ -25,7 +25,5 @@ app.post('/process_post', urlencodedParser, function (req, res) {
 const port = process.nextTick.PORT || 3000;
 
 app.listen(port, () => {
-  console.log(
-    `Listening on port at "http://127.0.0.1:3000/process_post" ${port}`
-  );
+  console.log(`Listening on port at http://127.0.0.1:3000/process_post${port}`);
 });
